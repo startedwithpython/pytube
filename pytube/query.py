@@ -285,7 +285,6 @@ class StreamQuery(Sequence):
         :param adaptive:
         :return: The :class:`Stream <Stream>` matching the given itag or None if
             not found.
-
         """
         if adaptive is True:
             return self.filter(adaptive=True).order_by("resolution").last()
