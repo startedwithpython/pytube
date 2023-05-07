@@ -280,8 +280,6 @@ class StreamQuery(Sequence):
         """Get highest resolution stream that is a progressive video.
 
         :rtype: :class:`Stream <Stream>` or None
-        :returns:
-            The :class:`Stream <Stream>` matching the given itag or None if
             not found.
 
         """
