@@ -277,9 +277,13 @@ class StreamQuery(Sequence):
         )
 
     def get_highest_resolution(self, adaptive=False) -> Optional[Stream]:
-        """Get highest resolution stream that is a progressive video.
-
+        """
+        Get highest resolution stream that is a progressive video.
+        Use adaptive=True to get highest resolution stream in an adaptive video.
+        
         :rtype: :class:`Stream <Stream>` or None
+        :param adaptive:
+        :return: The :class:`Stream <Stream>` matching the given itag or None if
             not found.
 
         """
